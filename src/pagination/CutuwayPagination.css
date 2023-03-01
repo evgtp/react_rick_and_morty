@@ -1,0 +1,124 @@
+.Cutaway_pagination {
+  list-style: none;
+  padding-top: 71px;
+  padding-bottom: 68px;
+  display: flex;
+  margin-left: 475px;
+}
+
+.Cutaway_pagination li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.Cutaway_pagination a:hover {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.Cutaway_pagination li a {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  padding-top: 4px;
+}
+
+.Cutaway_pagination li.active a {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.previous {
+  left: 307px;
+  position: absolute;
+  border-radius: none;
+  width: 114px !important;
+}
+
+.previous:hover {
+  color: #ff0000;
+}
+
+.link_previous {
+  border: none !important;
+  background-size: 25px 25px;
+  background-image: url(../assets/image/left_arrow.svg);
+  color: #fff;
+  background-repeat: no-repeat;
+  width: 114px !important;
+  z-index: 100;
+  position: absolute;
+}
+
+.link_previous:hover {
+  background-image: url(../assets/image/left_arrow_red.svg);
+  border: none;
+}
+
+.previous::after {
+  content: 'Предыдущая';
+  position: absolute;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 6px;
+  padding-left: 6px;
+  margin-right: 10px;
+  font-weight: 400;
+  left: 35px;
+  z-index: 1;
+}
+
+.previous::after:hover {
+  color: #ff0000;
+}
+
+.next {
+  width: 114px !important;
+  margin: 0 !important;
+  position: relative;
+}
+
+.next:hover {
+  color: #ff0000;
+}
+
+.link_next {
+  border: none !important;
+  background-size: 25px 25px;
+  background-image: url(../assets/image/right_arrow.svg);
+  color: #fff;
+  width: 120px !important;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-right: 0 !important;
+  margin-left: 25px !important;
+  position: absolute;
+  z-index: 100;
+  left: 1px;
+}
+
+.link_next:hover {
+  background-image: url(../assets/image/right_arrow_red.svg);
+  border: none;
+  color: #ff0000;
+}
+
+.next::before {
+  content: 'Следующая';
+  position: absolute;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 8px;
+  font-weight: 400;
+  right: 10px;
+  z-index: 1;
+}

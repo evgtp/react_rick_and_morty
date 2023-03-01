@@ -1,0 +1,196 @@
+.modalAuth {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+}
+
+.modalAuth.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalAuth__content {
+  position: absolute;
+  top: 194px;
+  width: 370px;
+  height: 445px;
+  background: #ffffff;
+  border: 1px dashed rgba(162, 162, 162, 0.6);
+  box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+
+.modalAuth__content.active {
+  transform: scale(1);
+}
+
+.authorization__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modalAuth__content h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.modalAuth__content input {
+  width: 331px;
+  height: 36px;
+  background: rgba(162, 162, 162, 0.1);
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 20px;
+  margin-top: 35px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.show__password {
+  position: absolute;
+  top: 193px;
+  right: 27px;
+  cursor: pointer;
+}
+
+.modalAuth__content input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.modalAuth__content input:focus {
+  border: 1px solid #00a3ff;
+}
+
+.authorization__form p {
+  border-color: #df0000;
+  font-size: 12px;
+  line-height: 14.63px;
+  border-radius: 0 0 5px 5px;
+  background-color: #df0000;
+  color: #ffffff;
+  width: 331px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 18px;
+  position: absolute;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 2px;
+  display: flex;
+  padding-bottom: 2px;
+}
+
+.error_email_or_login {
+  top: 148px;
+  left: 2px;
+}
+
+.error_email_or_login::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.password_error {
+  left: 2px;
+  top: 218px;
+}
+
+.password_error::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.modalAuth__content button {
+  width: 123.57px;
+  height: 49.28px;
+  background: #000000;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 53px;
+  margin-left: 124px;
+  cursor: pointer;
+}
+
+.remember {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.remember + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  margin-left: 20px;
+  margin-top: 37px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.remember + label::before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: #ffffff;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.remember:checked + label::before {
+  background: #ffffff;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 2px;
+  background-image: url('../assets/image/Checked.svg');
+  background-repeat: no-repeat;
+  background-size: 10px 8.13px;
+  background-position: center;
+}
+
+.rickTop {
+  position: absolute;
+  top: 34px;
+}
+
+.rickLeft {
+  position: absolute;
+  margin-top: 241px;
+  margin-right: 456px;
+}
+
+.mortyRight {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 400px;
+}

@@ -1,0 +1,135 @@
+.Btn {
+  width: 241px;
+  height: 41px;
+  background-color: #00a3ff;
+  color: #fff;
+  display: flex;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: absolute;
+  right: 29px;
+  top: 16px;
+  cursor: pointer;
+}
+
+.Btn:hover {
+  background-color: #008bda;
+}
+
+.Btn:active {
+  width: 241px;
+  height: 41px;
+  background-color: #00a3ff;
+  color: #fff;
+  display: flex;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: absolute;
+}
+
+.Btn img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+}
+
+.Btn p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  position: absolute;
+  right: 13px;
+  bottom: 11px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Episode {
+  display: flex;
+  position: relative;
+  height: 164px;
+  margin-top: 35px;
+  border: 1px dashed rgba(162, 162, 162, 0.6);
+}
+
+.Episode:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 5px 0px #a1a1a199;
+}
+
+.Episode_info {
+  margin-left: 29px;
+}
+
+.Episode_info h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 15px;
+  height: 44px;
+}
+
+.Episode_info p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #1f4766;
+}
+
+.Episode_info span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.Cutaway_in_Episode p {
+  position: absolute;
+  left: 299px;
+  top: 64px;
+}
+
+.Cutaway_in_Episode span {
+  position: absolute;
+  left: 299px;
+  top: 90px;
+  width: 842px;
+  height: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.episode_btn_append {
+    width: 241px;
+    height: 41px;
+    background-color: #fff;
+    color:  #00ca51;
+    border: none;
+    display: flex;
+    position: absolute;
+    right: 29px;
+    top: 16px;
+    cursor: pointer;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18.29px;
+}
+
+.episode_btn_append img {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.episode_btn_append p {
+  position: absolute;
+  top: 13px;
+  left: 32px;
+}

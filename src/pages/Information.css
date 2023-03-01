@@ -1,0 +1,46 @@
+.Info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 35px;
+}
+
+.Info h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.96px;
+  text-align: center;
+}
+
+.buttonBack {
+  width: 96px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+}
+
+.buttonBack:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.buttonBack p {
+  font-size: 18px;
+  margin-left: 19.5px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 3px;
+}
+
+.text p:first-child {
+  margin-top: 70px;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.text p:last-child {
+  margin-top: 25px;
+  font-size: 24px;
+  text-align: center;
+}

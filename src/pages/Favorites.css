@@ -1,0 +1,295 @@
+.Favorites {
+  width: 1170px;
+}
+
+.intro {
+  display: flex;
+  margin-top: 35px;
+  text-align: center;
+  position: relative;
+  height: 29px;
+}
+
+.buttonBack {
+  width: 96px;
+  height: 24px;
+  display: flex;
+}
+
+.buttonBack:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.buttonBack p {
+  font-size: 18px;
+  margin-left: 19.5px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 3px;
+}
+
+.title h2 {
+  position: absolute;
+  left: 489px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.divBtnNav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 57px;
+}
+
+.btnNav {
+  width: 270px;
+  height: 54px;
+  border: 1px solid #00a3ff;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  padding-top: 11px;
+}
+
+.location {
+  background-image: linear-gradient(#00000033, #00000033),
+    url('../assets/image/BtnLocation.png');
+}
+
+.person {
+  background-image: linear-gradient(#00000033, #00000033),
+    url('../assets/image/BtnPerson.png');
+}
+
+.episode {
+  background-image: linear-gradient(#00000033, #00000033),
+    url('../assets/image/BtnEpisode.png');
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-favorites {
+  transform: scale(1.59, 1.82);
+  transition: 2s;
+}
+
+.active-favorites:first-child {
+  margin-left: 80px;
+}
+
+.active-favorites:last-child {
+  margin-right: 80px;
+}
+
+.favorites_title {
+  position: absolute;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 59px;
+  top: 433px;
+  text-align: center;
+}
+
+.favorites_title {
+  width: 1170px;
+}
+
+.favorites__sort {
+  margin-top: 60px;
+  margin-bottom: 4px;
+}
+
+.favorites__sort span {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.favorites__sort span:first-child {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: default;
+}
+
+.Cutaway__favorites {
+  width: 570px;
+  height: 164px;
+  background: #ffffff;
+  border: 1px dashed rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: relative;
+  margin-top: 32px;
+
+  font-family: 'Montserrat';
+}
+
+.content__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Cutaway__favorites:hover {
+  border: 1px solid #a1a1a1;
+  box-shadow: 10px 10px 5px 0px rgb(161 161 161 / 60%);
+  cursor: pointer;
+}
+
+.Cutaway__favorites p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #1f4766;
+}
+
+.Cutaway__favorites span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000;
+}
+
+.name__favorites {
+  width: 284px;
+  height: 24px;
+  position: absolute;
+  left: 178px;
+  top: 14px;
+}
+
+.name__favorites h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.info_cutaway__favorites {
+  position: absolute;
+  display: flex;
+  top: 43px;
+  left: 178px;
+  flex-direction: column;
+}
+
+.info_species__favorites {
+  display: flex;
+}
+
+.info_origin__favorites {
+  display: flex;
+}
+
+.info_location__favorites {
+  display: flex;
+}
+
+.info_species__favorites p {
+  width: 107px;
+  margin-right: 55px;
+  padding-top: 3px;
+  margin-bottom: 7px;
+}
+
+.info_origin__favorites p {
+  width: 149.2px;
+  margin-right: 12.88px;
+  padding-top: 3px;
+}
+
+.info_origin__favorites span {
+  width: 211px;
+}
+
+.info_location__favorites {
+  padding-top: 7px;
+}
+
+.info_location__favorites p {
+  width: 128.5px;
+  margin-right: 34px;
+  padding-top: 2px;
+}
+
+.info_location__favorites span {
+  width: 211px;
+}
+
+.status__favorites span {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.btn__favorites {
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  border-radius: 40px;
+  width: 40px;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn__favorites img {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  right: 0px;
+}
+
+.btn__favorites::after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 40px;
+}
+
+.btn__favorites::before {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 40px;
+}
+
+.btn__favorites:hover::after,
+.btn__favorites:hover::before {
+  opacity: 0.1;
+}
+
+.Location_items {
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  grid-template-rows: 164px repeat;
+  grid-auto-rows: minmax(164px, 164px);
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+  margin-top: 60px;
+}
+
+.Episode_items {
+  margin-top: 60px;
+}

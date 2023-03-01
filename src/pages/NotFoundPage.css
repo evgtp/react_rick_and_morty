@@ -1,0 +1,63 @@
+.NotFoundPage {
+  width: 629px;
+  height: 568px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.NotFoundPage img {
+  display: flex;
+  justify-content: center;
+}
+
+.NotFoundPage h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.NotFoundPage p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.NotFoundPage button {
+  display: flex;
+  color: #fff;
+  background: #000;
+  padding: 14px 30px 13px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  width: 164px;
+  height: 49px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NotFoundPage button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.NotFoundPage button img {
+  width: 24px;
+  height: 22px;
+  margin-right: 15px;
+}
+
+.NotFoundPage a {
+  text-decoration: none;
+  width: 164px;
+  height: 49px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 58px;
+}

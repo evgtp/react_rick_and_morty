@@ -1,0 +1,48 @@
+.Header {
+  width: 1170px;
+  height: 112px;
+  margin-top: 38px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Controls {
+  position: absolute;
+  right: 0;
+  top: 31px;
+}
+
+.Controls :first-child {
+  width: 188px;
+  height: 49px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid;
+  font-weight: 500;
+  margin-right: 40.43px;
+  font-size: 18px;
+  line-height: 21.94px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Controls :last-child {
+  width: 123.57px;
+  height: 49px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 21.94px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Controls :first-child:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Controls :last-child:hover {
+  cursor: pointer;
+  background-color: #1f4766;
+  border: none;
+}

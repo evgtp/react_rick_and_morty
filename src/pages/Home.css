@@ -1,0 +1,49 @@
+.Main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  width: 1170px;
+}
+
+.Main a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Main_picture {
+  width: 369px;
+  height: 671px;
+  border: 1px dashed #a1a1a1;
+  border-radius: 19px;
+}
+
+.Main_picture:first-child {
+  margin-right: 31.5px;
+}
+
+.Main_picture:hover {
+  border: 1px solid #a1a1a1;
+  box-shadow: 10px 10px 5px 0px rgba(161, 161, 161, 0.6);
+  cursor: pointer;
+}
+
+.Main_picture img {
+  width: 330px;
+  height: 494px;
+  align-items: center;
+  margin: 20px 0 19px 20px;
+}
+
+.Main_picture h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-left: 23.94px;
+}
+
+.Main_picture p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 24px;
+  text-align: left;
+}

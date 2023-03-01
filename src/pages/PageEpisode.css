@@ -1,0 +1,169 @@
+.filter {
+  display: flex;
+  position: relative;
+  height: 71px;
+  margin-bottom: 35px;
+}
+
+.filter input {
+  background: rgba(162, 162, 162, 0.1);
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  padding-left: 13px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.filter input:focus {
+  border: 1px solid #00a3ff !important;
+  outline: none;
+}
+
+.filter input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.filter input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter p {
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 34px;
+}
+
+.filter_episode {
+  position: absolute;
+  left: 0px;
+}
+
+.filter_episode input {
+  width: 370px;
+  height: 36px;
+}
+
+.filter_race {
+  position: absolute;
+  left: 400px;
+}
+
+.filter_race input {
+  width: 270px;
+  height: 36px;
+}
+
+.filter_status {
+  position: absolute;
+  right: 200px;
+  width: 270px;
+  height: 71px;
+}
+
+.filter_status p {
+  margin-bottom: 6.5px;
+}
+
+.custom-select__control {
+  background: #a2a2a21a !important;
+  width: 270px !important;
+  height: 36px !important;
+  min-height: 35px !important;
+  position: absolute !important;
+  top: -7px !important;
+  border-radius: 5px !important;
+  z-index: 10;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-select__placeholder {
+  width: 270px !important;
+  height: 36px !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #00000066 !important;
+  padding-top: 10px;
+  margin: 0 !important;
+}
+
+.custom-select__value-container {
+  padding: 0 0 0 13px !important;
+}
+
+.custom-select__single-value {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  position: none;
+  color: #000000;
+}
+
+.custom-select__menu {
+  position: absolute !important;
+  top: 40px !important;
+  width: 150px !important;
+  height: 120px !important;
+  right: 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.custom-select__menu-list {
+  width: 150px !important;
+  height: 120px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.custom-select__option:first-child {
+  border-radius: 4px 4px 0px 0px !important;
+  width: 148px !important;
+  height: 38.9px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.custom-select__option {
+  width: 148px !important;
+  height: 39.5px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding: 10px 70px 11px 26px;
+}
+
+.custom-select__option:last-child {
+  width: 148px !important;
+  height: 41.8px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 0 4px 4px !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.inputFocus {
+  border: 1px solid #00a3ff !important;
+  outline: none !important;
+}

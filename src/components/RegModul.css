@@ -1,0 +1,284 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  position: absolute;
+  top: 194px;
+  width: 370px;
+  height: 637px;
+  background: #ffffff;
+  border: 1px dashed rgba(162, 162, 162, 0.6);
+  box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+
+.modal__content.active {
+  transform: scale(1);
+}
+
+.login__form p {
+  border-color: #df0000;
+  font-size: 12px;
+  line-height: 14.63px;
+  border-radius: 0 0 5px 5px;
+  background-color: #df0000;
+  color: #ffffff;
+  width: 331px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 18px;
+  position: absolute;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 2px;
+  display: flex;
+  padding-bottom: 2px;
+}
+/*
+.login__form p::before {
+  content: url(../assets/image/Error.svg);
+  padding: 2px 5px 2px 13px;
+} */
+
+.modal__content h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.modal__content input {
+  width: 331px;
+  height: 36px;
+  background: rgba(162, 162, 162, 0.1);
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  padding-left: 10px;
+  outline: none;
+}
+
+.email {
+  top: 114px;
+  left: 18px;
+}
+
+.error_email {
+  top: 146px;
+}
+
+.login {
+  top: 185px;
+  left: 18px;
+}
+
+.error_login {
+  top: 217px;
+}
+
+.Name {
+  top: 256px;
+  left: 18px;
+}
+
+.error_name {
+  top: 288px;
+}
+
+.surname {
+  top: 327px;
+  left: 18px;
+}
+
+.error_surname {
+  top: 359px;
+}
+
+.password {
+  top: 398px;
+  left: 18px;
+}
+
+.error_password {
+  top: 430px;
+}
+
+.confirmPassword {
+  top: 469px;
+  left: 18px;
+}
+
+.error_confirmPassword {
+  top: 501px;
+}
+
+.error_email::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.error_login::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.error_name::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.error_surname::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.error_password::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.error_confirmPassword::before {
+  content: url(../assets/image/Error.svg);
+  margin-right: 5px;
+  height: 16px;
+}
+
+.modal__content input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.modal__content input:focus {
+  border: 1px solid #00a3ff;
+}
+
+.modal__content button {
+  width: 236px;
+  height: 49px;
+  background: #000000;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 53px;
+  position: absolute;
+  bottom: 30px;
+  left: 68px;
+  cursor: pointer;
+}
+
+.register__form-show-password {
+  width: 24px !important;
+  height: 18.45px !important;
+  background-repeat: no-repeat !important;
+  position: absolute !important;
+  right: 20px !important;
+  bottom: 210px !important;
+  cursor: pointer !important;
+  opacity: 0.01;
+  z-index: 1000;
+  padding-right: 8.56px !important;
+}
+
+.hide.active {
+  background-image: url('../assets/image/Show.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 28.56px;
+  bottom: 207px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hide {
+  background-image: url('../assets/image/Hide.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10;
+  right: 28.56px;
+  bottom: 210px;
+  width: 24px;
+  height: 18.45px;
+}
+
+.hide2 {
+  background-image: url('../assets/image/Hide.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10;
+  right: 28.56px;
+  bottom: 140px;
+  width: 24px;
+  height: 18.45px;
+}
+
+.hide2.active {
+  background-image: url('../assets/image/Show.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 28.56px;
+  bottom: 137px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.register__form-show-confirmPassword {
+  width: 24px !important;
+  height: 18.45px !important;
+  background-repeat: no-repeat !important;
+  position: absolute !important;
+  right: 20px !important;
+  bottom: 140px !important;
+  cursor: pointer !important;
+  opacity: 0.01;
+  z-index: 1000;
+  padding-right: 8.56px !important;
+}
+
+.rickTop {
+  position: absolute;
+  top: 34px;
+}
+
+.rickLeft {
+  position: absolute;
+  margin-top: 241px;
+  margin-right: 456px;
+}
+
+.mortyRight {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 400px;
+}

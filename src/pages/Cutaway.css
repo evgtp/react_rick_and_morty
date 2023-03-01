@@ -1,0 +1,354 @@
+.Cutaway {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 164px 160px 230px 85px 250px 240px;
+  grid-template-rows: 38px 116px;
+  grid-template-areas:
+    'img name name name name status'
+    'img info info details floor btn ';
+
+  width: 1170px;
+  height: 164px;
+  border: 1px dashed rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: relative;
+  margin-top: 35px;
+}
+
+.status {
+  grid-area: status;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+
+.status span {
+  font-style: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.img {
+  grid-area: img;
+}
+
+.info {
+  grid-area: info;
+}
+
+.info_species {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.info_species span {
+  margin-left: 124px;
+}
+
+.info_origin {
+  display: flex;
+}
+
+.info_origin p {
+  flex-wrap: nowrap;
+  width: 149.12px;
+}
+
+.info_origin span {
+  flex-wrap: wrap;
+  margin-left: 12.88px;
+}
+
+.info_location {
+  display: flex;
+}
+
+.info_location p {
+  width: 145px;
+}
+
+.info_location span {
+  margin-left: 17px;
+}
+
+.data {
+  grid-area: data;
+  margin-left: 4.88px;
+}
+
+.data p:first-child {
+  margin-bottom: 3px;
+}
+
+.data p:last-child {
+  margin-top: 3px;
+}
+
+.details {
+  grid-area: details;
+}
+
+.details span {
+  margin-left: 12.88px;
+}
+
+.floor {
+  grid-area: floor;
+}
+
+.info_cutaway_data {
+  grid-area: info_cutaway;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_cutaway_data span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-left: 12.88px;
+}
+
+.info_cutaway_data span:first-child {
+  margin-bottom: 5px;
+}
+
+.info_cutaway_data span:last-child {
+  margin-top: 7px;
+}
+
+.btn {
+  grid-area: btn;
+
+  width: 241px;
+  height: 41px;
+  background-color: #00a3ff;
+  color: #fff;
+  display: flex;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #008bda;
+}
+
+.btn:active {
+  width: 241px;
+  height: 41px;
+  background-color: #00a3ff;
+  color: #fff;
+  display: flex;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: absolute;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  z-index: 10000;
+}
+
+.btn_append {
+  position: absolute;
+  background-color: #fff;
+  width: 141px;
+  height: 24px;
+  border: none;
+  right: 106px;
+  bottom: 24px;
+  display: flex;
+}
+
+.btn_append img {
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.btn_append svg {
+  display: none;
+}
+
+.btn_append p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  font-family: 'Montserrat', sans-serif;
+  color: #00ca51;
+}
+
+.btn svg {
+  display: none;
+}
+
+.btn p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  position: absolute;
+  right: 13px;
+  bottom: 11px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img img {
+  width: 162px;
+  height: 162px;
+}
+
+.Cutaway:hover {
+  cursor: pointer;
+  border: 1px solid #a1a1a1;
+  box-shadow: 10px 10px 5px 0px rgba(162, 162, 162, 0.6);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  grid-area: name;
+  margin-top: 8px;
+  margin-left: 7px;
+}
+
+.info_cutaway p {
+  font-size: 12px;
+  color: #1f4766;
+  font-weight: 400;
+  line-height: 15px;
+  margin-left: 7px;
+}
+
+.info_cutaway span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+}
+
+.info_cutaway p:first-child {
+  margin-bottom: 7px;
+}
+
+.info_cutaway p:last-child {
+  margin-top: 6px;
+}
+
+.cutaway_data p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  width: 211px;
+}
+
+.Cutaways {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Tile__Cutaway {
+  width: 570px;
+  height: 164px;
+  background: #ffffff;
+  border: 1px dashed rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+  position: relative;
+  margin-top: 32px;
+
+  font-family: 'Montserrat';
+}
+
+.Tile__Cutaway:hover {
+  border: 1px solid #a1a1a1;
+  box-shadow: 10px 10px 5px 0px rgb(161 161 161 / 60%);
+  cursor: pointer;
+}
+
+.Tile__Cutaway p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #1f4766;
+}
+
+.Tile__Cutaway span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000;
+}
+
+.Tile__name {
+  width: 284px;
+  height: 24px;
+  position: absolute;
+  left: 178px;
+  top: 14px;
+}
+
+.Tile__name h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.Tile__info__cutaway {
+  position: absolute;
+  display: flex;
+  top: 43px;
+  left: 178px;
+  flex-direction: column;
+}
+
+.Tile__epiz {
+  display: none;
+}
+
+.Tile__catuway_btn p {
+  display: none;
+}
+
+.Tile__catuway_btn {
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  border-radius: 40px;
+  width: 40px;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.Tile__catuway_btn img {
+  display: none;
+}
+
+.Tile__catuway_btn svg {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+.Add_btn_svg:hover {
+  fill: #008bda;
+}

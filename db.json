@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "eugen@mail.ru",
+      "password": "$2a$10$1DhEMbBGTa2s5WR4W5rVb.1VlYUR.jOjkopHWnHsALU5T2v9nw.yG",
+      "login": "evgtp1995",
+      "name": "evgeniy",
+      "surname": "tupitsyn",
+      "confirm_password": "123qweRTY",
+      "id": 1
+    }
+  ]
+}
